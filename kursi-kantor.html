@@ -34,77 +34,72 @@
     <!-- ============================================
        NAVBAR (scf-)
        ============================================ -->
-    <nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
-      <div class="container scf-max-width">
-        <a class="navbar-brand" href="index.html">STATURE</a>
-        <button
-          class="navbar-toggler border-0 shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="material-symbols-outlined scf-text-primary fs-1"
-            >menu</span
+<nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
+  <div class="container scf-max-width">
+    <!-- Brand / Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img 
+        src="assets/img/logo/logo-peralatan.webp" 
+        alt="Stature Corporate Furnishings" 
+        class="scf-navbar-logo"
+      />
+    </a>
+
+    <!-- Toggler Mobile -->
+    <button
+      class="navbar-toggler border-0 shadow-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="material-symbols-outlined scf-text-primary fs-1">menu</span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang Kami</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="produkDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-        </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tentang.html">Tentang Kami</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="produkDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Produk
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="produkDropdown">
-                <li>
-                  <a class="dropdown-item" href="meja-kantor.html"
-                    >Meja Kantor</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="kursi-kantor.html"
-                    >Kursi Kantor</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="lemari-rak.html"
-                    >Lemari & Rak</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="paket.html">Paket</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kontak.html">Kontak</a>
-            </li>
+            Produk
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+            <li><a class="dropdown-item" href="meja-kantor.html">Meja Kantor</a></li>
+            <li><a class="dropdown-item" href="kursi-kantor.html">Kursi Kantor</a></li>
+            <li><a class="dropdown-item" href="lemari-rak.html">Lemari &amp; Rak</a></li>
           </ul>
-          <div class="pt-3 pt-lg-0">
-            <a class="scf-btn-primary w-100 w-lg-auto" href="kontak.html"
-              >Hubungi Kami</a
-            >
-          </div>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paket.html">Paket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Kontak</a>
+        </li>
+      </ul>
+      <div class="pt-3 pt-lg-0">
+        <a class="scf-btn-primary w-100 w-lg-auto" href="kontak.html">Hubungi Kami</a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <!-- ============================================
        MAIN CONTENT
@@ -297,9 +292,14 @@
         <div class="row g-4">
           <!-- Brand & Deskripsi -->
           <div class="col-lg-4 col-md-6">
-            <span class="scf-headline-md scf-text-primary fw-bold d-block mb-3"
-              >STATURE</span
-            >
+            <!-- Logo sebagai pengganti teks STATURE -->
+            <a href="index.html" class="d-block mb-3">
+              <img
+                src="assets/img/logo/logo-peralatan.webp"
+                alt="Stature Corporate Furnishings"
+                class="scf-footer-logo"
+              />
+            </a>
             <p
               class="scf-body-md scf-text-on-surface-variant mb-3"
               style="max-width: 300px"

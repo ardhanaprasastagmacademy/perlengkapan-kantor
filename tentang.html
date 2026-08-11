@@ -6,7 +6,6 @@
     <title>Tentang Kami | Stature Corporate Furnishings</title>
 
     <!-- Bootstrap 5 CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,36 +28,26 @@
       rel="stylesheet"
     />
 
-    <style>
-      /* Paksa gambar di atas pada mobile */
-      @media (max-width: 991.98px) {
-        .scf-about-row {
-          display: flex !important;
-          flex-direction: column-reverse !important;
-        }
-        .scf-about-row .scf-about-image {
-          margin-bottom: 1.5rem !important;
-        }
-        .scf-about-row .scf-about-text {
-          text-align: left !important;
-        }
-        .scf-about-row .scf-about-text .scf-section-badge {
-          text-align: left !important;
-        }
-        .scf-about-row .scf-about-text .scf-display-lg {
-          font-size: 1.8rem !important;
-        }
-      }
-    </style>
+    <!-- Custom CSS utama -->
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body class="scf-body d-flex flex-column min-vh-100">
     <!-- ============================================================
-       NAVBAR (scf-)
+       NAVBAR - SAMA PERSIS DENGAN INDEX
        ============================================================ -->
     <nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
       <div class="container scf-max-width">
-        <a class="navbar-brand" href="index.html">STATURE</a>
+        <!-- Brand / Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/img/logo/logo-peralatan.webp"
+            alt="Stature Corporate Furnishings"
+            class="scf-navbar-logo"
+          />
+        </a>
+
+        <!-- Toggler Mobile -->
         <button
           class="navbar-toggler border-0 shadow-none"
           type="button"
@@ -72,6 +61,8 @@
             >menu</span
           >
         </button>
+
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
             <li class="nav-item">
@@ -92,21 +83,9 @@
                 Produk
               </a>
               <ul class="dropdown-menu" aria-labelledby="produkDropdown">
-                <li>
-                  <a class="dropdown-item" href="meja-kantor.html"
-                    >Meja Kantor</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="kursi-kantor.html"
-                    >Kursi Kantor</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="lemari-rak.html"
-                    >Lemari & Rak</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="meja-kantor.html">Meja Kantor</a></li>
+                <li><a class="dropdown-item" href="kursi-kantor.html">Kursi Kantor</a></li>
+                <li><a class="dropdown-item" href="lemari-rak.html">Lemari &amp; Rak</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -319,17 +298,20 @@
     </main>
 
     <!-- ============================================================
-       FOOTER (scf-)
+       FOOTER
        ============================================================ -->
-
     <footer class="scf-footer">
       <div class="container scf-max-width">
         <div class="row g-4">
           <!-- Brand & Deskripsi -->
           <div class="col-lg-4 col-md-6">
-            <span class="scf-headline-md scf-text-primary fw-bold d-block mb-3"
-              >STATURE</span
-            >
+            <a href="index.html" class="d-block mb-3">
+              <img
+                src="assets/img/logo/logo-peralatan.webp"
+                alt="Stature Corporate Furnishings"
+                class="scf-footer-logo"
+              />
+            </a>
             <p
               class="scf-body-md scf-text-on-surface-variant mb-3"
               style="max-width: 300px"

@@ -2854,3 +2854,51 @@
     font-size: 0.75rem;
   }
 }
+
+/* ---- Navbar Logo ---- */
+.scf-navbar-logo {
+  height: 50px;          /* Sesuaikan dengan tinggi navbar */
+  width: auto;           /* Menjaga rasio aspek */
+  max-height: 100%;      /* Tidak melebihi navbar */
+  display: block;
+  object-fit: contain;   /* Menjaga proporsi gambar */
+}
+
+/* Responsive logo ukuran lebih kecil di mobile */
+@media (max-width: 576px) {
+  .scf-navbar-logo {
+    height: 32px;        /* Lebih kecil di mobile */
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991.98px) {
+  .scf-navbar-logo {
+    height: 38px;
+  }
+}
+
+/* ---- Footer Logo ---- */
+.scf-footer-logo {
+  height: 90px;           /* Ukuran logo di footer */
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsif logo footer di mobile */
+@media (max-width: 576px) {
+  .scf-footer-logo {
+    height: 32px;         /* Lebih kecil di mobile */
+    margin-left: auto;
+    margin-right: auto;   /* Jika ingin center di mobile, bisa diaktifkan */
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991.98px) {
+  .scf-footer-logo {
+    height: 36px;
+  }
+}
