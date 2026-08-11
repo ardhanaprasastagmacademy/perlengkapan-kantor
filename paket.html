@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paket Furnitur Kantor - Stature Corporate Furnishings</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="scf-body d-flex flex-column min-vh-100">
+    <!-- ============================================
+       NAVBAR (scf-)
+       ============================================ -->
+    <nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
+      <div class="container scf-max-width">
+        <a class="navbar-brand" href="index.html">STATURE</a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined scf-text-primary fs-1"
+            >menu</span
+          >
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="produkDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Produk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+                <li>
+                  <a class="dropdown-item" href="meja-kantor.html"
+                    >Meja Kantor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kursi-kantor.html"
+                    >Kursi Kantor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lemari-rak.html"
+                    >Lemari &amp; Rak</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="paket.html">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+          <div class="pt-3 pt-lg-0">
+            <a class="scf-btn-primary w-100 w-lg-auto" href="kontak.html"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+    <main class="flex-grow-1">
+      <!-- ===== PAGE BANNER (Breadcrumb) ===== -->
+      <section class="scf-page-banner">
+        <div
+          class="scf-banner-bg"
+          style="
+            background-image: url(&quot;https://lh3.googleusercontent.com/aida/AP1WRLsKMsvslfF7-koDkUqHVIks4s_x-Qalp6iiJdAQmR7JpgcpJC8kw0m4ug7M-o4TohtGLhrfJnThxDHGoL9RRFKkwYGHZ2TDsxYy80ToFGHlIdMIlknX706RN7_ngnkFP9jFPGZ5eFS8U34AdocHQNJsD8XW3RA3XxjFHkJqii1LVlOTFJBMwD2AsbUoVnDPOGqMQeQYexF8640qJOpFj-EPDobnJqGan2FYhoBGjtuMXrGE2WuK4YZBWSor&quot;);
+          "
+        ></div>
+        <div class="container scf-max-width position-relative z-2">
+          <div class="scf-banner-content">
+            <nav aria-label="breadcrumb" class="scf-breadcrumb">
+              <ol class="breadcrumb justify-content-center mb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Beranda</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Paket Furnitur
+                </li>
+              </ol>
+            </nav>
+            <h1 class="scf-display-lg text-white mb-0">Paket</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PACKAGES GRID ===== -->
+      <section class="scf-section scf-bg-cream-surface">
+        <div class="container scf-max-width">
+          <div class="row g-4">
+            <div class="text-center mb-4 mb-md-5">
+              <span class="scf-eyebrow">PAKET KEBUTUHAN KANTOR</span>
+
+              <h2 class="scf-headline-lg scf-text-primary mb-2">
+                Paket Perlengkapan &amp; Furniture Kantor
+              </h2>
+
+              <p class="scf-body-md scf-text-on-surface-variant mx-auto">
+                Pilihan paket praktis untuk memenuhi kebutuhan ruang kerja,
+                mulai dari kantor baru hingga ruang meeting modern.
+              </p>
+            </div>
+            <!-- Paket Kantor Baru / Startup -->
+            <div class="col-md-4">
+              <div class="scf-package-card">
+                <span class="scf-package-badge">Untuk 5–10 Staf</span>
+
+                <h3 class="scf-package-title">Paket Kantor Baru / Startup</h3>
+
+                <p class="scf-package-desc">
+                  Kelengkapan dasar siap pakai untuk membangun ruang kantor baru
+                  yang nyaman, rapi, dan profesional.
+                </p>
+
+                <ul class="scf-package-list">
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    5–10 Unit Meja Kerja Staf Minimalis M-120
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    5–10 Unit Kursi Mesh Ergonomis K-40
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    1 Unit Meja Direktur M-180 + Kursi Leather
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    2 Unit Lemari Arsip Besi Pintu Geser Kaca
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Starter Pack ATK Kantor Lengkap
+                  </li>
+                </ul>
+
+                <a href="kontak.html" class="scf-btn-package">
+                  Minta Penawaran
+                </a>
+              </div>
+            </div>
+
+            <!-- Paket Smart Meeting Room -->
+            <div class="col-md-4">
+              <div class="scf-package-card-highlight">
+                <span class="scf-popular-badge"> Paket Unggulan </span>
+
+                <span class="scf-package-badge">
+                  Untuk Instansi &amp; Swasta
+                </span>
+
+                <h3 class="scf-package-title">Paket Smart Meeting Room</h3>
+
+                <p class="scf-package-desc">
+                  Sistem ruang rapat modern dengan teknologi konferensi untuk
+                  mendukung meeting, presentasi, dan kolaborasi profesional.
+                </p>
+
+                <ul class="scf-package-list">
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Interactive Flat Panel Smart Board 65" / 75" 4K
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    1 Set Meja Rapat Conference 8–12 Person
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    8–12 Unit Kursi Rapat Ergonomis Hydro
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Camera &amp; Microphone Array Video Conference
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Gratis Instalasi &amp; Training Penggunaan
+                  </li>
+                </ul>
+
+                <a href="kontak.html" class="scf-btn-package">
+                  Minta Penawaran
+                </a>
+              </div>
+            </div>
+
+            <!-- Paket Office Essentials -->
+            <div class="col-md-4">
+              <div class="scf-package-card">
+                <span class="scf-package-badge">
+                  Untuk Perusahaan &amp; Instansi
+                </span>
+
+                <h3 class="scf-package-title">Paket Office Essentials</h3>
+
+                <p class="scf-package-desc">
+                  Kombinasi perlengkapan kantor untuk kebutuhan operasional,
+                  penyimpanan dokumen, dan aktivitas kerja sehari-hari.
+                </p>
+
+                <ul class="scf-package-list">
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Meja Kerja Staf Sesuai Kebutuhan
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Kursi Kerja Ergonomis
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Lemari Arsip &amp; Filing Cabinet
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Rak Penyimpanan Dokumen
+                  </li>
+
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Perlengkapan ATK Kantor Dasar
+                  </li>
+                </ul>
+
+                <a href="kontak.html" class="scf-btn-package">
+                  Minta Penawaran
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PACKAGE BENEFITS ===== -->
+      <section class="scf-section scf-bg-cream-surface">
+        <div class="container scf-max-width">
+          <h2 class="scf-headline-lg scf-text-primary text-center mb-5">
+            Keuntungan Memilih Paket Furnitur Stature
+          </h2>
+          <div class="scf-benefits-grid">
+            <!-- Benefit 1 -->
+            <div class="scf-benefit-item">
+              <div class="scf-benefit-card">
+                <div class="scf-benefit-icon">
+                  <span class="material-symbols-outlined">savings</span>
+                </div>
+                <h3 class="scf-benefit-title">Hemat Hingga 20%</h3>
+                <p class="scf-benefit-desc">
+                  Harga bundel yang jauh lebih hemat dibandingkan pembelian item
+                  secara terpisah.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="scf-benefit-item">
+              <div class="scf-benefit-card">
+                <div class="scf-benefit-icon">
+                  <span class="material-symbols-outlined">design_services</span>
+                </div>
+                <h3 class="scf-benefit-title">Estetika Serasi</h3>
+                <p class="scf-benefit-desc">
+                  Warna, material, dan desain furnitur dipadukan harmonis sesuai
+                  identitas korporat.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="scf-benefit-item">
+              <div class="scf-benefit-card">
+                <div class="scf-benefit-icon">
+                  <span class="material-symbols-outlined">local_shipping</span>
+                </div>
+                <h3 class="scf-benefit-title">Pengiriman Serentak</h3>
+                <p class="scf-benefit-desc">
+                  Jadwal pengiriman dan instalasi yang terkoordinasi rapi tanpa
+                  mengganggu kerja tim.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="scf-benefit-item">
+              <div class="scf-benefit-card">
+                <div class="scf-benefit-icon">
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <h3 class="scf-benefit-title">Garansi Terpadu</h3>
+                <p class="scf-benefit-desc">
+                  Satu pintu garansi dan pemeliharaan untuk seluruh produk dalam
+                  paket.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BANNER ===== -->
+      <section class="scf-cta-banner">
+        <div class="container scf-max-width">
+          <h2 class="scf-display-lg text-white mb-3">
+            Butuh Paket Kustom Sesuai Budget?
+          </h2>
+          <p
+            class="scf-body-lg text-white-50 mb-4"
+            style="max-width: 600px; margin-left: auto; margin-right: auto"
+          >
+            Konsultasikan jumlah meja, kursi, dan layout kantor Anda dengan
+            konsultan kami.
+          </p>
+          <a
+            class="scf-btn-success"
+            href="https://wa.me/1234567890"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined scf-material-icon-fill"
+              >chat</span
+            >
+            Konsultasi Paket via WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================
+       FOOTER (scf-)
+       ============================================ -->
+
+    <footer class="scf-footer">
+      <div class="container scf-max-width">
+        <div class="row g-4">
+          <!-- Brand & Deskripsi -->
+          <div class="col-lg-4 col-md-6">
+            <span class="scf-headline-md scf-text-primary fw-bold d-block mb-3"
+              >STATURE</span
+            >
+            <p
+              class="scf-body-md scf-text-on-surface-variant mb-3"
+              style="max-width: 300px"
+            >
+              Menyediakan solusi furnitur korporat premium untuk ruang kerja
+              profesional yang menginspirasi produktivitas dan mencerminkan
+              identitas perusahaan Anda.
+            </p>
+          </div>
+
+          <!-- Produk -->
+          <div class="col-lg-2 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Produk
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li>
+                <a class="scf-footer-link" href="meja-kantor.html"
+                  >Meja Kantor</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="kursi-kantor.html"
+                  >Kursi Kantor</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="lemari-rak.html"
+                  >Lemari &amp; Rak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Layanan -->
+          <div class="col-lg-2 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Layanan
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li>
+                <a class="scf-footer-link" href="paket.html">Paket Furnitur</a>
+              </li>
+              <li>
+                <a class="scf-footer-link" href="tentang.html">Tentang Kami</a>
+              </li>
+              <li>
+                <a class="scf-footer-link" href="blog.html"
+                  >Blog &amp; Wawasan</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="kontak.html"
+                  >Konsultasi Gratis</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Hubungi Kami
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >location_on</span
+                >
+                <span class="scf-text-on-surface-variant"
+                  >Jakarta, Indonesia</span
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >call</span
+                >
+                <a class="scf-footer-link" href="tel:+6281234567890"
+                  >+62 812 3456 7890</a
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >mail</span
+                >
+                <a class="scf-footer-link" href="mailto:sales@stature.co.id"
+                  >sales@stature.co.id</a
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >schedule</span
+                >
+                <span class="scf-text-on-surface-variant"
+                  >Senin - Jumat, 09:00 - 18:00</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div
+          class="border-top scf-border-outline-variant mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <p class="scf-caption-md scf-text-on-surface-variant mb-0">
+            &copy; 2024 Stature Corporate Furnishings. All rights reserved.
+          </p>
+          <div class="d-flex gap-3">
+            <a class="scf-footer-link scf-caption-md" href="#"
+              >Kebijakan Privasi</a
+            >
+            <span class="scf-text-on-surface-variant">|</span>
+            <a class="scf-footer-link scf-caption-md" href="#"
+              >Syarat &amp; Ketentuan</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================
+       WHATSAPP FAB
+       ============================================ -->
+    <a
+      aria-label="Contact on WhatsApp"
+      class="scf-wa-fab"
+      href="https://wa.me/1234567890"
+      target="_blank"
+    >
+      <span class="material-symbols-outlined scf-material-icon-fill fs-2"
+        >chat</span
+      >
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

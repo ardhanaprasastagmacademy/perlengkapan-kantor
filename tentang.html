@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami | Stature Corporate Furnishings</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Paksa gambar di atas pada mobile */
+      @media (max-width: 991.98px) {
+        .scf-about-row {
+          display: flex !important;
+          flex-direction: column-reverse !important;
+        }
+        .scf-about-row .scf-about-image {
+          margin-bottom: 1.5rem !important;
+        }
+        .scf-about-row .scf-about-text {
+          text-align: left !important;
+        }
+        .scf-about-row .scf-about-text .scf-section-badge {
+          text-align: left !important;
+        }
+        .scf-about-row .scf-about-text .scf-display-lg {
+          font-size: 1.8rem !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="scf-body d-flex flex-column min-vh-100">
+    <!-- ============================================================
+       NAVBAR (scf-)
+       ============================================================ -->
+    <nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
+      <div class="container scf-max-width">
+        <a class="navbar-brand" href="index.html">STATURE</a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined scf-text-primary fs-1"
+            >menu</span
+          >
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tentang.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="produkDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Produk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+                <li>
+                  <a class="dropdown-item" href="meja-kantor.html"
+                    >Meja Kantor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kursi-kantor.html"
+                    >Kursi Kantor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lemari-rak.html"
+                    >Lemari & Rak</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paket.html">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+          <div class="pt-3 pt-lg-0">
+            <a class="scf-btn-primary w-100 w-lg-auto" href="kontak.html"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+    <main class="flex-grow-1">
+      <!-- ===== PAGE BANNER (Breadcrumb) ===== -->
+      <section class="scf-page-banner">
+        <div
+          class="scf-banner-bg"
+          style="
+            background-image: url(&quot;https://lh3.googleusercontent.com/aida/AP1WRLsKMsvslfF7-koDkUqHVIks4s_x-Qalp6iiJdAQmR7JpgcpJC8kw0m4ug7M-o4TohtGLhrfJnThxDHGoL9RRFKkwYGHZ2TDsxYy80ToFGHlIdMIlknX706RN7_ngnkFP9jFPGZ5eFS8U34AdocHQNJsD8XW3RA3XxjFHkJqii1LVlOTFJBMwD2AsbUoVnDPOGqMQeQYexF8640qJOpFj-EPDobnJqGan2FYhoBGjtuMXrGE2WuK4YZBWSor&quot;);
+          "
+        ></div>
+        <div class="container scf-max-width position-relative z-2">
+          <div class="scf-banner-content">
+            <nav aria-label="breadcrumb" class="scf-breadcrumb">
+              <ol class="breadcrumb justify-content-center mb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Beranda</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Tentang Kami
+                </li>
+              </ol>
+            </nav>
+            <h1 class="scf-display-lg text-white mb-0">Tentang Kami</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT INTRO ===== -->
+      <section class="scf-section scf-bg-cream-surface scf-about-intro">
+        <div class="container scf-max-width">
+          <div class="row align-items-center g-4 g-lg-5 scf-about-row">
+            <!-- Kolom Gambar -->
+            <div class="col-lg-6 scf-about-image order-1 order-lg-0">
+              <div class="scf-image-wrapper">
+                <img
+                  alt="Corporate office interior"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ13fhqAGeDe6w7Niiz2zvlJtxQHD_yxwUMQ2Ld6WZNwKE31DOn4GqF0BB3MZ_cMnyclLJ23-TZWUdz4GOrXKJIC9CmXKxsK7hf2Nf2zuga1ejQ66lyu1_qflX-0DsCvHc-srNJYZZx976G2yHteBpYQRA9V3EcL4wdF_n5Wqk4PeywhMnkrYhMEy_t7ME3QhKNMNcbyvlmKhmnf4J9A9RV8Pc0o4X1nWehKtWjioyYA9VB0S9CVt9RA"
+                />
+              </div>
+            </div>
+
+            <!-- Kolom Teks -->
+            <div class="col-lg-6 scf-about-text order-0 order-lg-1">
+              <span class="scf-section-badge text-start d-block mb-2"
+                >Tentang Kami</span
+              >
+              <h1 class="scf-display-lg scf-text-primary mb-2 mb-md-3">
+                Lebih dari Sekadar Penyedia Perlengkapan Kantor
+              </h1>
+              <p class="scf-body-lg scf-text-on-surface-variant mb-3">
+                Kami hadir untuk menjawab kebutuhan perusahaan, UMKM, sekolah,
+                instansi, coworking space, hotel, dan organisasi akan
+                perlengkapan kantor yang lengkap dan berkualitas. Kami
+                menyediakan meja kantor, kursi kantor, furniture kantor, lemari
+                kantor, rak kantor, hingga aksesoris kantor dalam satu tempat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TRUST SECTION ===== -->
+      <section class="scf-section scf-bg-cream-surface scf-section-alt">
+        <div class="container scf-max-width">
+          <div class="row g-4 text-center">
+            <div class="col-6 col-md-3">
+              <div class="scf-stat-card">
+                <span class="scf-stat-number">10+</span>
+                <span class="scf-stat-label">Tahun Pengalaman</span>
+                <p class="scf-stat-desc">
+                  Berpengalaman melayani berbagai sektor industri
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="scf-stat-card">
+                <span class="scf-stat-number">500+</span>
+                <span class="scf-stat-label">Klien Terpercaya</span>
+                <p class="scf-stat-desc">
+                  Perusahaan, sekolah, hotel, hingga coworking space
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="scf-stat-card">
+                <span class="scf-stat-number">1000+</span>
+                <span class="scf-stat-label">Produk Terjual</span>
+                <p class="scf-stat-desc">
+                  Meja, kursi, lemari, dan berbagai perlengkapan kantor
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="scf-stat-card">
+                <span class="scf-stat-number">99%</span>
+                <span class="scf-stat-label">Kepuasan Klien</span>
+                <p class="scf-stat-desc">
+                  Ulasan positif dari mitra bisnis kami di seluruh Indonesia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== NILAI-NILAI PERUSAHAAN ===== -->
+      <section class="scf-section scf-bg-cream-surface scf-section-alt">
+        <div class="container scf-max-width">
+          <div class="text-center mb-4 mb-md-5">
+            <h2 class="scf-headline-lg scf-text-primary mb-2">
+              Nilai-Nilai Kami
+            </h2>
+            <p class="scf-body-md scf-text-on-surface-variant">
+              Prinsip yang menjadi dasar kami dalam menyediakan perlengkapan dan
+              furniture kantor berkualitas.
+            </p>
+          </div>
+
+          <div class="scf-values-grid">
+            <!-- Profesionalisme -->
+            <div class="scf-value-card">
+              <div class="scf-value-icon">
+                <span class="material-symbols-outlined">business_center</span>
+              </div>
+              <h3 class="scf-value-title">Profesionalisme</h3>
+              <p class="scf-value-desc">
+                Kami mengutamakan pelayanan yang profesional dalam setiap
+                proses, mulai dari konsultasi kebutuhan, pemilihan produk,
+                hingga proses pengadaan perlengkapan dan furniture kantor.
+              </p>
+            </div>
+
+            <!-- Integritas -->
+            <div class="scf-value-card">
+              <div class="scf-value-icon">
+                <span class="material-symbols-outlined">handshake</span>
+              </div>
+              <h3 class="scf-value-title">Integritas</h3>
+              <p class="scf-value-desc">
+                Kami mengedepankan komunikasi yang jujur, informasi produk yang
+                transparan, serta penawaran yang jelas untuk membangun hubungan
+                jangka panjang dengan setiap pelanggan.
+              </p>
+            </div>
+
+            <!-- Kualitas -->
+            <div class="scf-value-card">
+              <div class="scf-value-icon">
+                <span class="material-symbols-outlined">workspace_premium</span>
+              </div>
+              <h3 class="scf-value-title">Kualitas</h3>
+              <p class="scf-value-desc">
+                Kami menghadirkan pilihan meja kantor, kursi kantor, lemari,
+                rak, partisi, dan furniture lainnya dengan memperhatikan
+                kualitas material, fungsi, kenyamanan, dan kebutuhan ruang
+                kerja.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BANNER ===== -->
+      <section class="scf-cta-banner">
+        <div class="container scf-max-width">
+          <div class="scf-cta-content">
+            <h2 class="scf-display-lg text-white mb-3">
+              Siap Transformasi Ruang Kantor Anda?
+            </h2>
+            <p class="scf-body-lg text-white-50 mb-4">
+              Konsultasikan kebutuhan furnitur korporat Anda dengan tim ahli
+              kami untuk menciptakan lingkungan kerja yang prestisius.
+            </p>
+            <a
+              class="scf-btn-success"
+              href="https://wa.me/1234567890"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined scf-material-icon-fill"
+                >chat</span
+              >
+              Konsultasi Gratis via WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+       FOOTER (scf-)
+       ============================================================ -->
+
+    <footer class="scf-footer">
+      <div class="container scf-max-width">
+        <div class="row g-4">
+          <!-- Brand & Deskripsi -->
+          <div class="col-lg-4 col-md-6">
+            <span class="scf-headline-md scf-text-primary fw-bold d-block mb-3"
+              >STATURE</span
+            >
+            <p
+              class="scf-body-md scf-text-on-surface-variant mb-3"
+              style="max-width: 300px"
+            >
+              Menyediakan solusi furnitur korporat premium untuk ruang kerja
+              profesional yang menginspirasi produktivitas dan mencerminkan
+              identitas perusahaan Anda.
+            </p>
+          </div>
+
+          <!-- Produk -->
+          <div class="col-lg-2 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Produk
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li>
+                <a class="scf-footer-link" href="meja-kantor.html"
+                  >Meja Kantor</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="kursi-kantor.html"
+                  >Kursi Kantor</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="lemari-rak.html"
+                  >Lemari &amp; Rak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Layanan -->
+          <div class="col-lg-2 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Layanan
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li>
+                <a class="scf-footer-link" href="paket.html">Paket Furnitur</a>
+              </li>
+              <li>
+                <a class="scf-footer-link" href="tentang.html">Tentang Kami</a>
+              </li>
+              <li>
+                <a class="scf-footer-link" href="blog.html"
+                  >Blog &amp; Wawasan</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="kontak.html"
+                  >Konsultasi Gratis</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Hubungi Kami
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >location_on</span
+                >
+                <span class="scf-text-on-surface-variant"
+                  >Jakarta, Indonesia</span
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >call</span
+                >
+                <a class="scf-footer-link" href="tel:+6281234567890"
+                  >+62 812 3456 7890</a
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >mail</span
+                >
+                <a class="scf-footer-link" href="mailto:sales@stature.co.id"
+                  >sales@stature.co.id</a
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >schedule</span
+                >
+                <span class="scf-text-on-surface-variant"
+                  >Senin - Jumat, 09:00 - 18:00</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div
+          class="border-top scf-border-outline-variant mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <p class="scf-caption-md scf-text-on-surface-variant mb-0">
+            &copy; 2024 Stature Corporate Furnishings. All rights reserved.
+          </p>
+          <div class="d-flex gap-3">
+            <a class="scf-footer-link scf-caption-md" href="#"
+              >Kebijakan Privasi</a
+            >
+            <span class="scf-text-on-surface-variant">|</span>
+            <a class="scf-footer-link scf-caption-md" href="#"
+              >Syarat &amp; Ketentuan</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       WHATSAPP FAB
+       ============================================================ -->
+    <a
+      aria-label="Contact on WhatsApp"
+      class="scf-wa-fab"
+      href="https://wa.me/1234567890"
+      target="_blank"
+    >
+      <span class="material-symbols-outlined scf-material-icon-fill fs-2"
+        >chat</span
+      >
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
