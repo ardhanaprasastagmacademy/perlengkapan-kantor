@@ -84,10 +84,10 @@
 
 .scf-display-lg {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 5vw + 0.8rem, 3.5rem);
-  line-height: 1.15;
+  font-size: clamp(1.75rem, 3.5vw + 0.5rem, 2.5rem);
+  line-height: 1.25;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .scf-body-lg {
@@ -3052,9 +3052,9 @@
 /* Responsif logo footer di mobile */
 @media (max-width: 576px) {
   .scf-footer-logo {
-    height: 32px;         /* Lebih kecil di mobile */
-    margin-left: auto;
-    margin-right: auto;   /* Jika ingin center di mobile, bisa diaktifkan */
+    height: 45px;         /* Ukuran proporsional di mobile */
+    margin-left: 0;       /* Tetap rata kiri */
+    margin-right: auto;
   }
 }
 
@@ -3063,4 +3063,53 @@
   .scf-footer-logo {
     height: 36px;
   }
+}
+
+/* ============================================================
+   PAGE BANNER (BREADCRUMB HEADER)
+   ============================================================ */
+.scf-page-banner {
+  position: relative;
+  padding: 5.5rem 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.scf-page-banner .scf-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.scf-page-banner .scf-banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 767.98px) {
+  .scf-page-banner {
+    padding: 4rem 0;
+    min-height: 200px;
+  }
+}
+
+/* ============================================================
+   CTA BANNER TITLE SIZE ADJUSTMENT
+   ============================================================ */
+.scf-cta-banner h2,
+.scf-cta-banner h3,
+.scf-contact-cta h2,
+.scf-contact-cta h3 {
+  font-size: clamp(1.4rem, 2.5vw + 0.4rem, 2rem) !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
 }
