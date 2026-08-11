@@ -17,6 +17,8 @@
   <!-- MAIN CSS -->
   <link href="assets/css/style.css" rel="stylesheet" />
 
+  <!-- Preloader -->
+  <script src="assets/js/preloader.js"></script>
 </head>
 <body class="scf-body d-flex flex-column min-vh-100">
 
@@ -112,62 +114,143 @@
 
 
 
-    <!-- ===== PROJECTS GALLERY ===== -->
+    <!-- ===== PRODUCT GRID ===== -->
     <section class="scf-section">
       <div class="container scf-max-width">
-        <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
-          <div>
-            <h2 class="scf-headline-lg scf-text-primary mb-2">Projects We Have Completed</h2>
-            <p class="scf-body-md scf-text-on-surface-variant mb-0">See how our storage solutions integrate into professional environments.</p>
-          </div>
-          </a>
+        <div class="scf-section-header">
+          <h2 class="scf-section-title">Koleksi Lemari &amp; Rak Kantor</h2>
+          <p class="scf-section-subtitle">Solusi penyimpanan dokumen dan arsip yang aman, rapi, dan elegan.</p>
         </div>
 
         <div class="row g-4">
-          <!-- Project 1 -->
-          <div class="col-md-4">
-            <div class="scf-storage-card" style="border-radius: 0.75rem;">
-              <div class="scf-storage-img" style="height: 220px;">
+          <!-- Product 1: Lemari Arsip Besi -->
+          <div class="col-md-6 col-lg-3">
+            <div class="scf-product-card">
+              <div class="scf-product-img">
                 <img
-                  alt="Tech Hub Locker Installation"
+                  alt="Lemari Arsip Besi"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7TxuNHayhG1zdqV7-KpDFvnhyIWYkVYquYnAZUW8puI4fcBjIBY-OxJ6h9XPxoGNqsnCyx4JBK0YKmODzlGSPorBuMTO-HtWRuoK0bHKkcImU5PdahnVH9YQkqgoF7-BtoEO584BXfw8furxYWT0hLji0fyMPt46uP4MJGq9Ha2k8-ulDU9PE69_7lXDcxmPltYEGUztKXPgP5pJ-ZnlAinyi2fklr-B3zFbz2uB9Dfk3KhEyatBCcw"
+                />
+              </div>
+              <div class="scf-product-body">
+                <h3 class="scf-product-title">Lemari Arsip Besi</h3>
+                <p class="scf-product-desc">
+                  Material baja kokoh dengan sistem penguncian central lock aman untuk dokumen penting.
+                </p>
+                <div class="scf-product-price">Mulai dari Rp 2.200.000</div>
+                <div class="scf-product-actions">
+                  <a class="scf-btn-detail" href="kontak.html">
+                    <span class="material-symbols-outlined fs-6">visibility</span>
+                    Detail
+                  </a>
+                  <a
+                    class="scf-btn-wa"
+                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Lemari%20Arsip%20Besi"
+                    target="_blank"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                    Tanya WA
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: Filing Cabinet -->
+          <div class="col-md-6 col-lg-3">
+            <div class="scf-product-card">
+              <div class="scf-product-img">
+                <img
+                  alt="Filing Cabinet"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvIH24suaQSHf8RnJtQSvJCB90IhBZHTtLLk7MXhLmf4EhwQxoMjdxyjMbsmTmQkpbmvh-dIxINe6bfY_zmhvVes_s8Wl_ht9jyAlwzSHCCGFqBioZy3xirWSMWwwnNh7Y6C7g6q0IRthYPQKU5-ABRcSkhUwANTx3qrWJQIANxmCZiUVz9ioYeCgsemZwUzgySE-uyuOg17okVucYZ-Jp0DfVrOKdKkxuRx5cpQNBQVPBBIrzgFaNg"
                 />
               </div>
-              <div class="scf-storage-body" style="padding: 1.25rem;">
-                <h4 class="scf-storage-title" style="font-size: 1rem; font-family: 'Inter', sans-serif; font-weight: 600;">Tech Hub Locker Installation</h4>
-                <p class="scf-storage-desc" style="font-size: 0.8rem; margin-bottom: 0;">Jakarta Central Business District</p>
+              <div class="scf-product-body">
+                <h3 class="scf-product-title">Filing Cabinet 4 Laci</h3>
+                <p class="scf-product-desc">
+                  Sistem rel laci halus untuk pengorganisasian berkas dan map gantung efisien.
+                </p>
+                <div class="scf-product-price">Mulai dari Rp 1.850.000</div>
+                <div class="scf-product-actions">
+                  <a class="scf-btn-detail" href="kontak.html">
+                    <span class="material-symbols-outlined fs-6">visibility</span>
+                    Detail
+                  </a>
+                  <a
+                    class="scf-btn-wa"
+                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Filing%20Cabinet%204%20Laci"
+                    target="_blank"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                    Tanya WA
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div class="col-md-4">
-            <div class="scf-storage-card" style="border-radius: 0.75rem;">
-              <div class="scf-storage-img" style="height: 220px;">
+          <!-- Product 3: Rak Buku Kayu -->
+          <div class="col-md-6 col-lg-3">
+            <div class="scf-product-card">
+              <div class="scf-product-img">
                 <img
-                  alt="Legal Firm Archival System"
+                  alt="Rak Buku Kayu"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGDmUBgDh2bLyfPk0sVovi8WDVLvYIe-XePTnpP9R7Vq3DwjrW0N87arexaIrPuwl-1f_QyRTLihDfRkaIn3gV_eHIEP3_57OuR4Em90ZJb2GYoaRSyOMozMOVrRHvIviAfT9Acycu6MNraPySKMnIvcOHlnwnYmKzFcUGlvKiBGVx_qLsL1H9GZ9C5QBZd-4_PDq3mu18Vt_fcX_Hzs9ytRdPYvmtgeeqMJoXeY37zcBKgwXdrn-iXw"
                 />
               </div>
-              <div class="scf-storage-body" style="padding: 1.25rem;">
-                <h4 class="scf-storage-title" style="font-size: 1rem; font-family: 'Inter', sans-serif; font-weight: 600;">Legal Firm Archival System</h4>
-                <p class="scf-storage-desc" style="font-size: 0.8rem; margin-bottom: 0;">Surabaya Financial Center</p>
+              <div class="scf-product-body">
+                <h3 class="scf-product-title">Rak Buku &amp; Display</h3>
+                <p class="scf-product-desc">
+                  Desain terbuka minimalis modern cocok untuk display katalog dan dekorasi kantor.
+                </p>
+                <div class="scf-product-price">Mulai dari Rp 1.400.000</div>
+                <div class="scf-product-actions">
+                  <a class="scf-btn-detail" href="kontak.html">
+                    <span class="material-symbols-outlined fs-6">visibility</span>
+                    Detail
+                  </a>
+                  <a
+                    class="scf-btn-wa"
+                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Rak%20Buku%20dan%20Display"
+                    target="_blank"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                    Tanya WA
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Project 3 -->
-          <div class="col-md-4">
-            <div class="scf-storage-card" style="border-radius: 0.75rem;">
-              <div class="scf-storage-img" style="height: 220px;">
+          <!-- Product 4: Locker Karyawan -->
+          <div class="col-md-6 col-lg-3">
+            <div class="scf-product-card">
+              <div class="scf-product-img">
                 <img
-                  alt="Executive Boardroom Fit-out"
+                  alt="Locker Karyawan"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekdE_pWTU6f9XYq4qzftDr1xd1auJW6skDLBk7SvKW_bFIWxO_-DotAcOCEDQAFTjKE3w2wK7FPyaPeiCN2ZNFX-AwtTqAbg3qQ0ODSlbbi2kE1uvfHj4U0sFTd32397eRANSvGbeCpFQBdhlqeKeUHSZEvMCF58VOfRWFhzzxrPsSIAskhkUg0kJ-xMA2AEOXK1t7XFQRxwinrCsNBcTJBd677s_sRZuFyZ5i0faU4_ji3miiGrxRQ"
                 />
               </div>
-              <div class="scf-storage-body" style="padding: 1.25rem;">
-                <h4 class="scf-storage-title" style="font-size: 1rem; font-family: 'Inter', sans-serif; font-weight: 600;">Executive Boardroom Fit-out</h4>
-                <p class="scf-storage-desc" style="font-size: 0.8rem; margin-bottom: 0;">Bandung Corporate Headquarters</p>
+              <div class="scf-product-body">
+                <h3 class="scf-product-title">Locker Karyawan 6 Pintu</h3>
+                <p class="scf-product-desc">
+                  Locker serbaguna berbahan metal tahan lama untuk keamanan barang pribadi tim.
+                </p>
+                <div class="scf-product-price">Mulai dari Rp 3.100.000</div>
+                <div class="scf-product-actions">
+                  <a class="scf-btn-detail" href="kontak.html">
+                    <span class="material-symbols-outlined fs-6">visibility</span>
+                    Detail
+                  </a>
+                  <a
+                    class="scf-btn-wa"
+                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Locker%20Karyawan%206%20Pintu"
+                    target="_blank"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                    Tanya WA
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -183,7 +266,7 @@
           Hubungi tim ahli kami untuk mendiskusikan kebutuhan penyimpanan dan furnitur perusahaan Anda hari ini.
         </p>
         <a class="scf-btn-success" href="kontak.html">
-          <span class="material-symbols-outlined scf-material-icon-fill">chat</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
           Hubungi Kami Sekarang
         </a>
       </div>
@@ -271,11 +354,14 @@
        WHATSAPP FAB
        ============================================ -->
   <a aria-label="Contact on WhatsApp" class="scf-wa-fab" href="https://wa.me/1234567890" target="_blank">
-    <span class="material-symbols-outlined scf-material-icon-fill fs-2">chat</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
   </a>
 
   <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>
