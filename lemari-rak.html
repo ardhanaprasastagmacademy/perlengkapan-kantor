@@ -1,374 +1,555 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lemari & Rak -Perlengkapan Kantor</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemari & Rak -Perlengkapan Kantor</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="assets/img/logo/favicon.webp" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/img/logo/favicon.webp" />
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- MAIN CSS -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- MAIN CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Preloader -->
-  <script src="assets/js/preloader.js"></script>
-</head>
-<body class="scf-body d-flex flex-column min-vh-100">
-
-  <!-- ============================================
+    <!-- Preloader -->
+    <script src="assets/js/preloader.js"></script>
+  </head>
+  <body class="scf-body d-flex flex-column min-vh-100">
+    <!-- ============================================
        NAVBAR (scf-)
        ============================================ -->
-<nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
-  <div class="container scf-max-width">
-    <!-- Brand / Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img 
-        src="assets/img/logo/logo-peralatan.webp" 
-        alt="Stature Corporate Furnishings" 
-        class="scf-navbar-logo"
-      />
-    </a>
+    <nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
+      <div class="container scf-max-width">
+        <!-- Brand / Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/img/logo/logo-peralatan.webp"
+            alt="Stature Corporate Furnishings"
+            class="scf-navbar-logo"
+          />
+        </a>
 
-    <!-- Toggler Mobile -->
-    <button
-      class="navbar-toggler border-0 shadow-none"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarContent"
-      aria-controls="navbarContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="material-symbols-outlined scf-text-primary fs-1">menu</span>
-    </button>
-
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tentang.html">Tentang Kami</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="produkDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+        <!-- Toggler Mobile -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined scf-text-primary fs-1"
+            >menu</span
           >
-            Produk
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="produkDropdown">
-            <li><a class="dropdown-item" href="meja-kantor.html">Meja Kantor</a></li>
-            <li><a class="dropdown-item" href="kursi-kantor.html">Kursi Kantor</a></li>
-            <li><a class="dropdown-item active" href="lemari-rak.html">Lemari &amp; Rak</a></li>
-            <li><a class="dropdown-item" href="furnitur-kantor.html">Furnitur Kantor</a></li>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="produkDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Produk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+                <li>
+                  <a class="dropdown-item" href="meja-kantor.html"
+                    >Meja Kantor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kursi-kantor.html"
+                    >Kursi Kantor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="lemari-rak.html"
+                    >Lemari &amp; Rak</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="furnitur-kantor.html"
+                    >Furnitur Kantor</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paket.html">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="paket.html">Paket</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontak.html">Kontak</a>
-        </li>
-      </ul>
-      <div class="pt-3 pt-lg-0">
-        <a class="scf-btn-primary w-100 w-lg-auto" href="kontak.html">Hubungi Kami</a>
+          <div class="pt-3 pt-lg-0">
+            <a class="scf-btn-primary w-100 w-lg-auto" href="kontak.html"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
-  <!-- ============================================
+    </nav>
+    <!-- ============================================
        MAIN CONTENT
        ============================================ -->
-  <main class="flex-grow-1">
-
-    <!-- ===== PAGE BANNER ===== -->
-    <section class="scf-page-banner">
-      <div class="scf-banner-bg" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLsKMsvslfF7-koDkUqHVIks4s_x-Qalp6iiJdAQmR7JpgcpJC8kw0m4ug7M-o4TohtGLhrfJnThxDHGoL9RRFKkwYGHZ2TDsxYy80ToFGHlIdMIlknX706RN7_ngnkFP9jFPGZ5eFS8U34AdocHQNJsD8XW3RA3XxjFHkJqii1LVlOTFJBMwD2AsbUoVnDPOGqMQeQYexF8640qJOpFj-EPDobnJqGan2FYhoBGjtuMXrGE2WuK4YZBWSor');"></div>
-      <div class="container scf-max-width position-relative z-2">
-        <div class="scf-banner-content">
-          <h1 class="scf-headline-lg text-white mb-2">Lemari &amp; Rak</h1>
-          <nav aria-label="breadcrumb" class="scf-breadcrumb">
-            <ol class="breadcrumb justify-content-center mb-0">
-              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Lemari &amp; Rak</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- ===== PRODUCT GRID ===== -->
-    <section class="scf-section">
-      <div class="container scf-max-width">
-        <div class="scf-section-header">
-          <h2 class="scf-section-title">Koleksi Lemari &amp; Rak Kantor</h2>
-          <p class="scf-section-subtitle">Solusi penyimpanan dokumen dan arsip yang aman, rapi, dan elegan.</p>
-        </div>
-
-        <div class="row g-4">
-          <!-- Product 1: Lemari Arsip Besi -->
-          <div class="col-md-6 col-lg-3">
-            <div class="scf-product-card">
-              <div class="scf-product-img">
-                <img
-                  alt="Lemari Arsip Besi"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7TxuNHayhG1zdqV7-KpDFvnhyIWYkVYquYnAZUW8puI4fcBjIBY-OxJ6h9XPxoGNqsnCyx4JBK0YKmODzlGSPorBuMTO-HtWRuoK0bHKkcImU5PdahnVH9YQkqgoF7-BtoEO584BXfw8furxYWT0hLji0fyMPt46uP4MJGq9Ha2k8-ulDU9PE69_7lXDcxmPltYEGUztKXPgP5pJ-ZnlAinyi2fklr-B3zFbz2uB9Dfk3KhEyatBCcw"
-                />
-              </div>
-              <div class="scf-product-body">
-                <h3 class="scf-product-title">Lemari Arsip Besi</h3>
-                <p class="scf-product-desc">
-                  Material baja kokoh dengan sistem penguncian central lock aman untuk dokumen penting.
-                </p>
-                <div class="scf-product-price">Mulai dari Rp 2.200.000</div>
-                <div class="scf-product-actions">
-                  <a class="scf-btn-detail" href="lemari-arsip-besi.html">
-                    <span class="material-symbols-outlined fs-6">visibility</span>
-                    Detail
-                  </a>
-                  <a
-                    class="scf-btn-wa"
-                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Lemari%20Arsip%20Besi"
-                    target="_blank"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                    Tanya WA
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 2: Filing Cabinet -->
-          <div class="col-md-6 col-lg-3">
-            <div class="scf-product-card">
-              <div class="scf-product-img">
-                <img
-                  alt="Filing Cabinet"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvIH24suaQSHf8RnJtQSvJCB90IhBZHTtLLk7MXhLmf4EhwQxoMjdxyjMbsmTmQkpbmvh-dIxINe6bfY_zmhvVes_s8Wl_ht9jyAlwzSHCCGFqBioZy3xirWSMWwwnNh7Y6C7g6q0IRthYPQKU5-ABRcSkhUwANTx3qrWJQIANxmCZiUVz9ioYeCgsemZwUzgySE-uyuOg17okVucYZ-Jp0DfVrOKdKkxuRx5cpQNBQVPBBIrzgFaNg"
-                />
-              </div>
-              <div class="scf-product-body">
-                <h3 class="scf-product-title">Filing Cabinet 4 Laci</h3>
-                <p class="scf-product-desc">
-                  Sistem rel laci halus untuk pengorganisasian berkas dan map gantung efisien.
-                </p>
-                <div class="scf-product-price">Mulai dari Rp 1.850.000</div>
-                <div class="scf-product-actions">
-                  <a class="scf-btn-detail" href="filing-cabinet.html">
-                    <span class="material-symbols-outlined fs-6">visibility</span>
-                    Detail
-                  </a>
-                  <a
-                    class="scf-btn-wa"
-                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Filing%20Cabinet%204%20Laci"
-                    target="_blank"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                    Tanya WA
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 3: Rak Buku Kayu -->
-          <div class="col-md-6 col-lg-3">
-            <div class="scf-product-card">
-              <div class="scf-product-img">
-                <img
-                  alt="Rak Buku Kayu"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGDmUBgDh2bLyfPk0sVovi8WDVLvYIe-XePTnpP9R7Vq3DwjrW0N87arexaIrPuwl-1f_QyRTLihDfRkaIn3gV_eHIEP3_57OuR4Em90ZJb2GYoaRSyOMozMOVrRHvIviAfT9Acycu6MNraPySKMnIvcOHlnwnYmKzFcUGlvKiBGVx_qLsL1H9GZ9C5QBZd-4_PDq3mu18Vt_fcX_Hzs9ytRdPYvmtgeeqMJoXeY37zcBKgwXdrn-iXw"
-                />
-              </div>
-              <div class="scf-product-body">
-                <h3 class="scf-product-title">Rak Buku &amp; Display</h3>
-                <p class="scf-product-desc">
-                  Desain terbuka minimalis modern cocok untuk display katalog dan dekorasi kantor.
-                </p>
-                <div class="scf-product-price">Mulai dari Rp 1.400.000</div>
-                <div class="scf-product-actions">
-                  <a class="scf-btn-detail" href="rak-buku.html">
-                    <span class="material-symbols-outlined fs-6">visibility</span>
-                    Detail
-                  </a>
-                  <a
-                    class="scf-btn-wa"
-                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Rak%20Buku%20dan%20Display"
-                    target="_blank"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                    Tanya WA
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 4: Locker Karyawan -->
-          <div class="col-md-6 col-lg-3">
-            <div class="scf-product-card">
-              <div class="scf-product-img">
-                <img
-                  alt="Locker Karyawan"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekdE_pWTU6f9XYq4qzftDr1xd1auJW6skDLBk7SvKW_bFIWxO_-DotAcOCEDQAFTjKE3w2wK7FPyaPeiCN2ZNFX-AwtTqAbg3qQ0ODSlbbi2kE1uvfHj4U0sFTd32397eRANSvGbeCpFQBdhlqeKeUHSZEvMCF58VOfRWFhzzxrPsSIAskhkUg0kJ-xMA2AEOXK1t7XFQRxwinrCsNBcTJBd677s_sRZuFyZ5i0faU4_ji3miiGrxRQ"
-                />
-              </div>
-              <div class="scf-product-body">
-                <h3 class="scf-product-title">Locker Karyawan 6 Pintu</h3>
-                <p class="scf-product-desc">
-                  Locker serbaguna berbahan metal tahan lama untuk keamanan barang pribadi tim.
-                </p>
-                <div class="scf-product-price">Mulai dari Rp 3.100.000</div>
-                <div class="scf-product-actions">
-                  <a class="scf-btn-detail" href="locker-karyawan.html">
-                    <span class="material-symbols-outlined fs-6">visibility</span>
-                    Detail
-                  </a>
-                  <a
-                    class="scf-btn-wa"
-                    href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Locker%20Karyawan%206%20Pintu"
-                    target="_blank"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                    Tanya WA
-                  </a>
-                </div>
-              </div>
-            </div>
+    <main class="flex-grow-1">
+      <!-- ===== PAGE BANNER ===== -->
+      <section class="scf-page-banner">
+        <div
+          class="scf-banner-bg"
+          style="
+            background-image: url(&quot;https://lh3.googleusercontent.com/aida/AP1WRLsKMsvslfF7-koDkUqHVIks4s_x-Qalp6iiJdAQmR7JpgcpJC8kw0m4ug7M-o4TohtGLhrfJnThxDHGoL9RRFKkwYGHZ2TDsxYy80ToFGHlIdMIlknX706RN7_ngnkFP9jFPGZ5eFS8U34AdocHQNJsD8XW3RA3XxjFHkJqii1LVlOTFJBMwD2AsbUoVnDPOGqMQeQYexF8640qJOpFj-EPDobnJqGan2FYhoBGjtuMXrGE2WuK4YZBWSor&quot;);
+          "
+        ></div>
+        <div class="container scf-max-width position-relative z-2">
+          <div class="scf-banner-content">
+            <h1 class="scf-headline-lg text-white mb-2">Lemari &amp; Rak</h1>
+            <nav aria-label="breadcrumb" class="scf-breadcrumb">
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Beranda</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Lemari &amp; Rak
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== CTA BANNER ===== -->
-    <section class="scf-cta-banner">
-      <div class="container scf-max-width">
-        <h2 class="scf-display-lg text-white mb-3">Siap Transformasi Ruang Kantor Anda?</h2>
-        <p class="scf-body-lg text-white-50 mb-4" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-          Hubungi tim ahli kami untuk mendiskusikan kebutuhan penyimpanan dan furnitur perusahaan Anda hari ini.
-        </p>
-        <a class="scf-btn-success" href="kontak.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-          Hubungi Kami Sekarang
-        </a>
-      </div>
-    </section>
+      <!-- ===== PRODUCT GRID ===== -->
+      <section class="scf-section">
+        <div class="container scf-max-width">
+          <div class="scf-section-header">
+            <h2 class="scf-section-title">Koleksi Lemari &amp; Rak Kantor</h2>
+            <p class="scf-section-subtitle">
+              Solusi penyimpanan dokumen dan arsip yang aman, rapi, dan elegan.
+            </p>
+          </div>
 
-  </main>
+          <div class="row g-4">
+            <!-- Product 1: Lemari Arsip Besi -->
+            <div class="col-md-6 col-lg-3">
+              <div class="scf-product-card">
+                <div class="scf-product-img">
+                  <img
+                    alt="Lemari Arsip Besi"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7TxuNHayhG1zdqV7-KpDFvnhyIWYkVYquYnAZUW8puI4fcBjIBY-OxJ6h9XPxoGNqsnCyx4JBK0YKmODzlGSPorBuMTO-HtWRuoK0bHKkcImU5PdahnVH9YQkqgoF7-BtoEO584BXfw8furxYWT0hLji0fyMPt46uP4MJGq9Ha2k8-ulDU9PE69_7lXDcxmPltYEGUztKXPgP5pJ-ZnlAinyi2fklr-B3zFbz2uB9Dfk3KhEyatBCcw"
+                  />
+                </div>
+                <div class="scf-product-body">
+                  <h3 class="scf-product-title">Lemari Arsip Besi</h3>
+                  <p class="scf-product-desc">
+                    Material baja kokoh dengan sistem penguncian central lock
+                    aman untuk dokumen penting.
+                  </p>
+                  <div class="scf-product-price">Mulai dari Rp 2.200.000</div>
+                  <div class="scf-product-actions">
+                    <a class="scf-btn-detail" href="lemari-arsip-besi.html">
+                      <span class="material-symbols-outlined fs-6"
+                        >visibility</span
+                      >
+                      Detail
+                    </a>
+                    <a
+                      class="scf-btn-wa"
+                      href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Lemari%20Arsip%20Besi"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                        />
+                      </svg>
+                      Tanya WA
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- ============================================
+            <!-- Product 2: Filing Cabinet -->
+            <div class="col-md-6 col-lg-3">
+              <div class="scf-product-card">
+                <div class="scf-product-img">
+                  <img
+                    alt="Filing Cabinet"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvIH24suaQSHf8RnJtQSvJCB90IhBZHTtLLk7MXhLmf4EhwQxoMjdxyjMbsmTmQkpbmvh-dIxINe6bfY_zmhvVes_s8Wl_ht9jyAlwzSHCCGFqBioZy3xirWSMWwwnNh7Y6C7g6q0IRthYPQKU5-ABRcSkhUwANTx3qrWJQIANxmCZiUVz9ioYeCgsemZwUzgySE-uyuOg17okVucYZ-Jp0DfVrOKdKkxuRx5cpQNBQVPBBIrzgFaNg"
+                  />
+                </div>
+                <div class="scf-product-body">
+                  <h3 class="scf-product-title">Filing Cabinet 4 Laci</h3>
+                  <p class="scf-product-desc">
+                    Sistem rel laci halus untuk pengorganisasian berkas dan map
+                    gantung efisien.
+                  </p>
+                  <div class="scf-product-price">Mulai dari Rp 1.850.000</div>
+                  <div class="scf-product-actions">
+                    <a class="scf-btn-detail" href="filing-cabinet.html">
+                      <span class="material-symbols-outlined fs-6"
+                        >visibility</span
+                      >
+                      Detail
+                    </a>
+                    <a
+                      class="scf-btn-wa"
+                      href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Filing%20Cabinet%204%20Laci"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                        />
+                      </svg>
+                      Tanya WA
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3: Rak Buku Kayu -->
+            <div class="col-md-6 col-lg-3">
+              <div class="scf-product-card">
+                <div class="scf-product-img">
+                  <img
+                    alt="Rak Buku Kayu"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGDmUBgDh2bLyfPk0sVovi8WDVLvYIe-XePTnpP9R7Vq3DwjrW0N87arexaIrPuwl-1f_QyRTLihDfRkaIn3gV_eHIEP3_57OuR4Em90ZJb2GYoaRSyOMozMOVrRHvIviAfT9Acycu6MNraPySKMnIvcOHlnwnYmKzFcUGlvKiBGVx_qLsL1H9GZ9C5QBZd-4_PDq3mu18Vt_fcX_Hzs9ytRdPYvmtgeeqMJoXeY37zcBKgwXdrn-iXw"
+                  />
+                </div>
+                <div class="scf-product-body">
+                  <h3 class="scf-product-title">Rak Buku &amp; Display</h3>
+                  <p class="scf-product-desc">
+                    Desain terbuka minimalis modern cocok untuk display katalog
+                    dan dekorasi kantor.
+                  </p>
+                  <div class="scf-product-price">Mulai dari Rp 1.400.000</div>
+                  <div class="scf-product-actions">
+                    <a class="scf-btn-detail" href="rak-buku.html">
+                      <span class="material-symbols-outlined fs-6"
+                        >visibility</span
+                      >
+                      Detail
+                    </a>
+                    <a
+                      class="scf-btn-wa"
+                      href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Rak%20Buku%20dan%20Display"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                        />
+                      </svg>
+                      Tanya WA
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4: Locker Karyawan -->
+            <div class="col-md-6 col-lg-3">
+              <div class="scf-product-card">
+                <div class="scf-product-img">
+                  <img
+                    alt="Locker Karyawan"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekdE_pWTU6f9XYq4qzftDr1xd1auJW6skDLBk7SvKW_bFIWxO_-DotAcOCEDQAFTjKE3w2wK7FPyaPeiCN2ZNFX-AwtTqAbg3qQ0ODSlbbi2kE1uvfHj4U0sFTd32397eRANSvGbeCpFQBdhlqeKeUHSZEvMCF58VOfRWFhzzxrPsSIAskhkUg0kJ-xMA2AEOXK1t7XFQRxwinrCsNBcTJBd677s_sRZuFyZ5i0faU4_ji3miiGrxRQ"
+                  />
+                </div>
+                <div class="scf-product-body">
+                  <h3 class="scf-product-title">Locker Karyawan 6 Pintu</h3>
+                  <p class="scf-product-desc">
+                    Locker serbaguna berbahan metal tahan lama untuk keamanan
+                    barang pribadi tim.
+                  </p>
+                  <div class="scf-product-price">Mulai dari Rp 3.100.000</div>
+                  <div class="scf-product-actions">
+                    <a class="scf-btn-detail" href="locker-karyawan.html">
+                      <span class="material-symbols-outlined fs-6"
+                        >visibility</span
+                      >
+                      Detail
+                    </a>
+                    <a
+                      class="scf-btn-wa"
+                      href="https://wa.me/1234567890?text=Halo,%20saya%20tertarik%20dengan%20Locker%20Karyawan%206%20Pintu"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                        />
+                      </svg>
+                      Tanya WA
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BANNER ===== -->
+      <section class="scf-cta-banner">
+        <div class="container scf-max-width">
+          <h2 class="scf-display-lg text-white mb-3">
+            Siap Transformasi Ruang Kantor Anda?
+          </h2>
+          <p
+            class="scf-body-lg text-white-50 mb-4"
+            style="max-width: 600px; margin-left: auto; margin-right: auto"
+          >
+            Hubungi tim ahli kami untuk mendiskusikan kebutuhan penyimpanan dan
+            furnitur perusahaan Anda hari ini.
+          </p>
+          <a class="scf-btn-success" href="kontak.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+            Hubungi Kami Sekarang
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================
        FOOTER (scf-)
        ============================================ -->
 
-  <footer class="scf-footer">
-    <div class="container scf-max-width">
-      <div class="row g-4">
-        <!-- Brand & Deskripsi -->
-        <div class="col-lg-4 col-md-6">
-          <a href="index.html" class="d-block mb-3">
-            <img src="assets/img/logo/logo-peralatan.webp" alt="Stature Corporate Furnishings"
-              class="scf-footer-logo" />
-          </a>
-          <p class="scf-body-md scf-text-on-surface-variant mb-3" style="max-width: 300px;">
-            Menyediakan solusi furnitur korporat premium untuk ruang kerja profesional yang menginspirasi produktivitas dan mencerminkan identitas perusahaan Anda.
+    <footer class="scf-footer">
+      <div class="container scf-max-width">
+        <div class="row g-4">
+          <!-- Brand & Deskripsi -->
+          <div class="col-lg-4 col-md-6">
+            <a href="index.html" class="d-block mb-3">
+              <img
+                src="assets/img/logo/logo-peralatan.webp"
+                alt="Stature Corporate Furnishings"
+                class="scf-footer-logo"
+              />
+            </a>
+            <p
+              class="scf-body-md scf-text-on-surface-variant mb-3"
+              style="max-width: 300px"
+            >
+              Menyediakan solusi furnitur korporat premium untuk ruang kerja
+              profesional yang menginspirasi produktivitas dan mencerminkan
+              identitas perusahaan Anda.
+            </p>
+          </div>
+
+          <!-- Produk -->
+          <div class="col-lg-2 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Produk
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li>
+                <a class="scf-footer-link" href="meja-kantor.html"
+                  >Meja Kantor</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="kursi-kantor.html"
+                  >Kursi Kantor</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="lemari-rak.html"
+                  >Lemari &amp; Rak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Layanan -->
+          <div class="col-lg-2 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Layanan
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li>
+                <a class="scf-footer-link" href="paket.html">Paket Furnitur</a>
+              </li>
+              <li>
+                <a class="scf-footer-link" href="tentang.html">Tentang Kami</a>
+              </li>
+              <li>
+                <a class="scf-footer-link" href="blog.html"
+                  >Blog &amp; Wawasan</a
+                >
+              </li>
+              <li>
+                <a class="scf-footer-link" href="kontak.html"
+                  >Konsultasi Gratis</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+              Hubungi Kami
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >location_on</span
+                >
+                <span class="scf-text-on-surface-variant"
+                  >Jakarta, Indonesia</span
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >call</span
+                >
+                <a class="scf-footer-link" href="tel:+6281234567890"
+                  >+62 812 3456 7890</a
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >mail</span
+                >
+                <a class="scf-footer-link" href="mailto:sales@stature.co.id"
+                  >sales@stature.co.id</a
+                >
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <span
+                  class="material-symbols-outlined scf-text-primary"
+                  style="font-size: 1.2rem"
+                  >schedule</span
+                >
+                <span class="scf-text-on-surface-variant"
+                  >Senin - Jumat, 09:00 - 18:00</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div
+          class="border-top scf-border-outline-variant mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <p class="scf-caption-md scf-text-on-surface-variant mb-0">
+            &copy; 2026Perlengkapan Kantor. All rights reserved.
           </p>
-        </div>
-
-        <!-- Produk -->
-        <div class="col-lg-2 col-md-6">
-          <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">Produk</h4>
-          <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
-            <li><a class="scf-footer-link" href="meja-kantor.html">Meja Kantor</a></li>
-            <li><a class="scf-footer-link" href="kursi-kantor.html">Kursi Kantor</a></li>
-            <li><a class="scf-footer-link" href="lemari-rak.html">Lemari &amp; Rak</a></li>
-           
-          </ul>
-        </div>
-
-        <!-- Layanan -->
-        <div class="col-lg-2 col-md-6">
-          <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">Layanan</h4>
-          <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
-            <li><a class="scf-footer-link" href="paket.html">Paket Furnitur</a></li>
-            <li><a class="scf-footer-link" href="tentang.html">Tentang Kami</a></li>
-            <li><a class="scf-footer-link" href="blog.html">Blog &amp; Wawasan</a></li>
-            <li><a class="scf-footer-link" href="kontak.html">Konsultasi Gratis</a></li>
-           
-          </ul>
-        </div>
-
-        <!-- Kontak -->
-        <div class="col-lg-4 col-md-6">
-          <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">Hubungi Kami</h4>
-          <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
-            <li class="d-flex align-items-start gap-2">
-              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem;">location_on</span>
-              <span class="scf-text-on-surface-variant">Jakarta, Indonesia</span>
-            </li>
-            <li class="d-flex align-items-start gap-2">
-              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem;">call</span>
-              <a class="scf-footer-link" href="tel:+6281234567890">+62 812 3456 7890</a>
-            </li>
-            <li class="d-flex align-items-start gap-2">
-              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem;">mail</span>
-              <a class="scf-footer-link" href="mailto:sales@stature.co.id">sales@stature.co.id</a>
-            </li>
-            <li class="d-flex align-items-start gap-2">
-              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem;">schedule</span>
-              <span class="scf-text-on-surface-variant">Senin - Jumat, 09:00 - 18:00</span>
-            </li>
-          </ul>
+          <div class="d-flex gap-3">
+            <a class="scf-footer-link scf-caption-md" href="#"
+              >Kebijakan Privasi</a
+            >
+            <span class="scf-text-on-surface-variant">|</span>
+            <a class="scf-footer-link scf-caption-md" href="#"
+              >Syarat &amp; Ketentuan</a
+            >
+          </div>
         </div>
       </div>
+    </footer>
 
-      <!-- Bottom bar -->
-      <div class="border-top scf-border-outline-variant mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <p class="scf-caption-md scf-text-on-surface-variant mb-0">
-          &copy; 2024Perlengkapan Kantor. All rights reserved.
-        </p>
-        <div class="d-flex gap-3">
-          <a class="scf-footer-link scf-caption-md" href="#">Kebijakan Privasi</a>
-          <span class="scf-text-on-surface-variant">|</span>
-          <a class="scf-footer-link scf-caption-md" href="#">Syarat &amp; Ketentuan</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ============================================
+    <!-- ============================================
        WHATSAPP FAB
        ============================================ -->
-  <a aria-label="Contact on WhatsApp" class="scf-wa-fab" href="https://wa.me/1234567890" target="_blank">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-    </svg>
-  </a>
+    <a
+      aria-label="Contact on WhatsApp"
+      class="scf-wa-fab"
+      href="https://wa.me/1234567890"
+      target="_blank"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+        />
+      </svg>
+    </a>
 
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-  </script>
-  <script src="assets/js/animations.js"></script>
-</body>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/animations.js"></script>
+  </body>
 </html>
