@@ -48,8 +48,11 @@
     }, wait);
   }
 
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    hide();
+  } else {
+    document.addEventListener("DOMContentLoaded", hide);
+  }
   window.addEventListener("load", hide);
-  setTimeout(function () {
-    if (document.getElementById("scf-preloader")) hide();
-  }, 5000);
+  setTimeout(hide, 300);
 })();
