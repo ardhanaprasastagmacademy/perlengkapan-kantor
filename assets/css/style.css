@@ -1363,18 +1363,49 @@
 
 .scf-product-card .scf-product-img {
   height: 240px;
-  overflow: hidden;
-  background-color: var(--scf-cream-base, #f5ebdd);
-  position: relative;
-}
-.scf-product-card .scf-product-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f7eeea 65%, #ebdcd5 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
+
+/* Subtle background accent grid & spotlight glow */
+.scf-product-card .scf-product-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 65%),
+    linear-gradient(90deg, rgba(80, 44, 18, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(80, 44, 18, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+  opacity: 0.85;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+.scf-product-card .scf-product-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 8px 16px rgba(80, 44, 18, 0.14));
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
+}
+
 .scf-product-card:hover .scf-product-img img {
-  transform: scale(1.05);
+  transform: scale(1.06);
+  filter: drop-shadow(0 12px 24px rgba(80, 44, 18, 0.2));
 }
 
 .scf-product-card .scf-product-body {
@@ -1548,23 +1579,45 @@
    ============================================================ */
 @media (max-width: 576px) {
   .scf-product-card .scf-product-img {
-    height: 200px;
+    height: 210px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem;
+  }
+  .scf-product-card .scf-product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center;
   }
   .scf-product-card .scf-product-body {
-    padding: 1.25rem;
+    padding: 1.15rem 1rem 1.25rem;
   }
   .scf-product-card .scf-product-title {
     font-size: 1.05rem;
+    margin-bottom: 0.3rem;
   }
   .scf-product-card .scf-product-desc {
-    font-size: 0.85rem;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
   }
   .scf-product-card .scf-product-price {
-    font-size: 0.8rem;
+    font-size: 0.84rem;
+    margin-bottom: 0.9rem;
   }
+  .scf-product-actions {
+    gap: 0.4rem;
+  }
+  .scf-product-actions .scf-btn-detail,
   .scf-product-card .scf-btn-wa {
-    font-size: 0.75rem;
-    padding: 0.55rem 1rem;
+    font-size: 0.74rem;
+    padding: 0.55rem 0.4rem;
+    border-radius: 0.55rem;
   }
   .scf-catalog-header .scf-display-lg {
     font-size: 1.8rem;
@@ -3889,5 +3942,27 @@
 
   .scf-hero-photo {
     max-height: 260px;
+  }
+}
+
+/* ============================================================
+   PRODUCT DETAIL CAROUSEL / IMAGES (UNCROPPED FULL FIT)
+   ============================================================ */
+.scf-carousel-img {
+  height: 480px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+@media (max-width: 991.98px) {
+  .scf-carousel-img {
+    height: 380px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .scf-carousel-img {
+    height: 300px !important;
   }
 }
