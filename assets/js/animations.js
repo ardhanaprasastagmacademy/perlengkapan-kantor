@@ -67,6 +67,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     applyAnimationClasses();
     initObserver();
+    initScrollTop();
   });
 
   // ---- Automatically tag elements for animation ----
@@ -192,5 +193,49 @@
     for (var i = 0; i < targets.length; i++) {
       observer.observe(targets[i]);
     }
+  }
+
+  // ---- Scroll to Top Button ----
+  function initScrollTop() {
+    var scrollTopBtn = document.getElementById("scf-scroll-top");
+
+    // Auto-create button if missing from DOM
+    if (!scrollTopBtn) {
+      scrollTopBtn = document.createElement("button");
+      scrollTopBtn.id = "scf-scroll-top";
+      scrollTopBtn.className = "scf-scroll-top";
+      scrollTopBtn.setAttribute("aria-label", "Kembali ke atas");
+      scrollTopBtn.setAttribute("title", "Kembali ke atas");
+      scrollTopBtn.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+      `;
+      var waFab = document.querySelector(".scf-wa-fab");
+      if (waFab && waFab.parentNode) {
+        waFab.parentNode.insertBefore(scrollTopBtn, waFab);
+      } else {
+        document.body.appendChild(scrollTopBtn);
+      }
+    }
+
+    function toggleScrollTop() {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("scf-show");
+      } else {
+        scrollTopBtn.classList.remove("scf-show");
+      }
+    }
+
+    window.addEventListener("scroll", toggleScrollTop, { passive: true });
+    toggleScrollTop();
+
+    scrollTopBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
   }
 })();

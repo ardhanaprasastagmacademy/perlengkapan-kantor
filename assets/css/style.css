@@ -1305,6 +1305,72 @@
 }
 
 /* ============================================================
+   SCROLL TOP / BACK TO TOP FAB
+   ============================================================ */
+.scf-scroll-top {
+  position: fixed;
+  bottom: calc(2rem + 60px + 12px);
+  right: calc(2rem + 5px);
+  z-index: 1050;
+  background-color: var(--scf-primary);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(80, 44, 18, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px) scale(0.9);
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              visibility 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 0.2s ease,
+              box-shadow 0.2s ease;
+  outline: none;
+  text-decoration: none;
+  padding: 0;
+}
+.scf-scroll-top.scf-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+.scf-scroll-top:hover {
+  background-color: var(--scf-primary-container);
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 12px 25px rgba(80, 44, 18, 0.45);
+}
+.scf-scroll-top:active {
+  transform: translateY(-1px) scale(0.98);
+}
+@media (max-width: 767.98px) {
+  .scf-scroll-top {
+    width: 42px;
+    height: 42px;
+    bottom: calc(1.25rem + 50px + 10px);
+    right: calc(1.25rem + 4px);
+  }
+  .scf-scroll-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .scf-scroll-top {
+    width: 44px;
+    height: 44px;
+    bottom: calc(1.25rem + 54px + 10px);
+    right: calc(1.25rem + 5px);
+  }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .scf-footer {
